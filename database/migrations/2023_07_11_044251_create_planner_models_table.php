@@ -15,6 +15,9 @@ class CreatePlannerModelsTable extends Migration
     {
         Schema::create('planner_models', function (Blueprint $table) {
             $table->id();
+            $table->string('task');
+            $table->string('description');
+            $table->string('image');
             $table->timestamps();
         });
     }
