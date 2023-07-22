@@ -16,7 +16,7 @@ class PlannerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index() 
     {
         // get planners
         $tasks = PlannerModel::all();
@@ -118,7 +118,7 @@ class PlannerController extends Controller
 
             //update post with new image
             $tasks->update([
-                'taks'          => $request->task,
+                'task'          => $request->task,
                 'description'   => $request->description,
                 'image'         => $image->hashName(),
             ]);
